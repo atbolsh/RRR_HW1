@@ -1,0 +1,173 @@
+\documentclass[psamsfonts]{amsart}
+\usepackage{amssymb,amsfonts}
+\usepackage[all,arc]{xy}
+\usepackage{enumerate}
+\usepackage{mathrsfs}
+\usepackage{tikz}
+%\usepackage[letterpaper, portrait, margin=in]{geometry}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{breqn}
+%\onehalfspacing
+
+%theoremstyle{plain} --- default
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{conj}[thm]{Conjecture}
+\newtheorem{quest}[thm]{Question}
+
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{defns}[thm]{Definitions}
+\newtheorem{con}[thm]{Construction}
+\newtheorem{exmp}[thm]{Example}
+
+
+\newtheorem{exmps}[thm]{Examples}
+\newtheorem{notn}[thm]{Notation}
+\newtheorem{notns}[thm]{Notations}
+\newtheorem{addm}[thm]{Addendum}
+\newtheorem{exer}[thm]{Exercise}
+\newtheorem{prob}[thm]{Problem}
+
+\theoremstyle{remark}
+\newtheorem{rem}[thm]{Remark}
+\newtheorem{rems}[thm]{Remarks}
+\newtheorem{warn}[thm]{Warning}
+\newtheorem{sch}[thm]{Scholium}
+
+\DeclareMathOperator{\sgn}{sgn}
+
+%%%%COMMENT MACROS%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%COMMENT MACROS%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage{showlabels}
+% LABELS!!
+%\usepackage{times}%
+%\usepackage[T1]{fontenc}%
+%\usepackage{mathrsfs}%
+
+%\usepackage[dvips]{graphics}
+\usepackage{epsfig}
+\usepackage{amsmath}
+%\usepackage{hyperref, amsmath, amsthm, amsfonts, amscd, flafter,epsf}
+%\usepackage{amsfonts,amsthm, ,amscd}
+%\input amssym.def
+%\input amssym.tex
+\usepackage{color}
+\newcommand{\will}[1]{{\color{blue} \sf $\clubsuit\clubsuit\clubsuit$ Will: [#1]}}
+\newcommand{\artem}[1]{{\color{green} \sf $\spadesuit\spadesuit\spadesuit$ Artem: [#1]}}
+%%%%%END  COMMENT MACROS(April 2011)%%%%%%%%%%%%%%%%%%%
+%%%%%END  COMMENT MACROS(April 2011)%%%%%%%%%%%%%%%%%%%
+
+\makeatletter
+\let\c@equation\c@thm
+\makeatother
+\numberwithin{equation}{section}
+
+\bibliographystyle{plain}
+
+\title{Homework 1}
+
+\author{A. Bolshakov}
+
+\date{ \today }
+
+\begin{document}
+
+\maketitle
+
+\section{Problem 1}
+
+Many constraint surfaces can be locally linearized. 
+Let us examine the behavior of the dynamical system
+\[
+\dot{\mathbf{x}} = P_A(\mathbf{x}) - P_B(\mathbf{x})
+\]
+for this large class of systems by just looking at a simple, 2 dimensional case. 
+Let constraint $A$ be
+$x_2 = mx_1$
+and constraing $B$ be 
+$x_2 = -mx_1$
+for some slope $m$.
+(see Fig. \ref{fig1}).
+%If our linear system has different slopes, we can easily get to this situation by rotating and dilating the coordinate axis.
+%This is a linear map, so the dynamics are not affected by these transformations.
+
+
+%Assume we start our dynamical system in the regime 
+%$-mx_1 < x_2 < mx_1$ 
+%(if this is not satisfied, we can easily rename the axes).
+
+
+The system is simple enough that we can explicitly solve for $P_A$ and $P_B$:
+\[
+P_A \left( 
+\begin{matrix}
+x_1 \\ x_2
+\end{matrix}
+\right)
+= 
+\frac{1}{m^2 + 1}
+\left(
+\begin{matrix}
+x_1 + mx_2 \\
+mx_1 + m^2x_2
+\end{matrix}
+\right)
+\]
+\[
+P_B \left( 
+\begin{matrix}
+x_1 \\ x_2
+\end{matrix}
+\right)
+= 
+\frac{1}{m^2 + 1}
+\left(
+\begin{matrix}
+x_1 - mx_2 \\
+m^2x_2 - mx_1
+\end{matrix}
+\right)
+\]
+
+We can ignore the $m^2 + 1$ coefficient as we only care about long term behavior.
+So, we get
+\[
+\dot{\mathbf{x}} = 
+P_A(\mathbf{x}) - P_B(\mathbf{x}) = 
+\left(
+\begin{matrix}
+2mx_2 \\ 2mx_1
+\end{matrix}
+\right) 
+= 
+\left(
+\begin{matrix}
+0 & 2m \\
+2m & 0
+\end{matrix}
+\right)
+\mathbf{x}
+\]
+
+
+This is a classic linear hyperbolic system. The two eigenvalues are $\pm 2m$, so all trajectories except a set of measure $0$ will flow away.
+
+
+\section{Problem 2}
+
+
+
+\section{Problem 3}
+
+
+
+
+
+\end{document}
+
