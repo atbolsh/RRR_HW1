@@ -208,8 +208,75 @@ flow is \textbf{not} fully understood.
 
 \section{Problem 3}
 
+Let $N$ be the length of our array (image), and let $P$ be the set of points $p \in \mathbb{R}^N$ such that 
+$\text{sort}(p)$ gives the desired distribution (in our case, a uniform distribution).
 
 
+Obviously, we wish to project some arbitrary point $x \in \mathbb{R}^N$ to this manifold $P$.
+Denote by $p^{\star}$ the point with indeces in the same order as $x$.
+
+Consider two candidate points $p, q \in P$ which differ only by a single permutation: 
+for some $i \not= j$, $p_i = q_j$ and $p_j = q_i$, while for all $k \not= i, j$, $p_k = q_k$.
+
+We have
+\[
+|q - x| - |p - x| = 
+\]
+\[
+[(x_i - q_i)^2 + (x_j - q_j)^2] - [(x_i - p_i)^2 + (x_j - p_j)^2] = 
+\]
+\[
+[(x_i - p_j)^2 + (x_j - p_i)^2] - [(x_i - p_i)^2 + (x_j - p_j)^2] = 
+\]
+\[
+2x_ip_i + 2x_jp_j - 2x_ip_j - 2x_jp_i = 
+\]
+\[
+2(x_i - x_j)(p_i - p_j)
+\]
+
+Now, if $x_i, x_j$ are in the same order as $p_i, p_j$ 
+(either both $i$-indeces are smaller than the $j$s, or vice versa), 
+this quantity is positive, so $p$ is closer to $x$ than $q$. If the order is mismatched, 
+then $q$ is closer.
+
+There are many sorting algorithms (for instance, \texttt{quickSort}) 
+which are based on only exchanging values when they are in the wrong order. 
+Therefore, starting at an arbitrary point $p_0 \in P$, it is possible 
+to use any of these algorithms to construct a sequence $p_0, p_1, p_2, \ldots, p^{\star}$ with the property
+\[
+|p_{i + 1} - x| < |p_i - x|
+\]
+
+Therefore, $p^{\star}$ is closer to $x$ than any arbitrary point in $P$, as desired.
+
+\[
+\]
+
+The flattened images are below; the python code is online in \texttt{prob3.py} 
+(the code was written to be efficient, easy to read, and reusable.
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{original.pdf}
+\caption{Original Picture}
+\label{fig3}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{rescaled.pdf}
+\caption{Output image with uniform distribution.}
+\label{fig4}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{bimodal.pdf}
+\caption{Projection onto a skewed bimodal distribution; 
+the darkest $\frac{1}{6}$th pixels are black, the rest are white.}
+\label{fig4}
+\end{figure}
 
 
 \end{document}

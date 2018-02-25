@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.2.9)  25 FEB 2018 12:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.2.9)  25 FEB 2018 17:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -820,7 +820,11 @@ Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
 \epsfysize=\dimen318
 )
 \bibstyle{plain}
-(./HW1.aux)
+(./HW1.aux
+
+LaTeX Warning: Label `fig4' multiply defined.
+
+)
 \openout1 = `HW1.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 79.
@@ -929,34 +933,53 @@ File: RRR_flow_final.png Graphic file (type png)
 Package pdftex.def Info: RRR_flow_final.png used on input line 179.
 (pdftex.def)             Requested size: 360.0pt x 326.98239pt.
 
-[2 <./RRR_flow_final.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[2 <./RRR_flow_final.png>] <original.pdf, id=28, 462.52798pt x 346.89601pt>
+File: original.pdf Graphic file (type pdf)
 
- [3]
-[4] (./HW1.aux) ) 
+<use original.pdf>
+Package pdftex.def Info: original.pdf used on input line 261.
+(pdftex.def)             Requested size: 360.0pt x 270.01141pt.
+ <rescaled.pdf, id=29, 462.52798pt x 346.89601pt>
+File: rescaled.pdf Graphic file (type pdf)
+
+<use rescaled.pdf>
+Package pdftex.def Info: rescaled.pdf used on input line 268.
+(pdftex.def)             Requested size: 360.0pt x 270.01141pt.
+ <bimodal.pdf, id=30, 462.52798pt x 346.89601pt>
+File: bimodal.pdf Graphic file (type pdf)
+
+<use bimodal.pdf>
+Package pdftex.def Info: bimodal.pdf used on input line 275.
+(pdftex.def)             Requested size: 360.0pt x 270.01141pt.
+ [3] [4 <./original.pdf>] [5 <./rescaled.pdf>] [6 <./bimodal.pdf>] (./HW1.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 24114 strings out of 493029
- 444706 string characters out of 6136235
- 497819 words of memory out of 5000000
- 27118 multiletter control sequences out of 15000+600000
- 12409 words of font info for 54 fonts, out of 8000000 for 9000
+ 24133 strings out of 493029
+ 444971 string characters out of 6136235
+ 498874 words of memory out of 5000000
+ 27133 multiletter control sequences out of 15000+600000
+ 12577 words of font info for 55 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 55i,7n,54p,10372b,335s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc1
-0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmtt8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/symbols/msbm10.pfb>
-Output written on HW1.pdf (4 pages, 212602 bytes).
+ 55i,7n,54p,10372b,336s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mtt8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msb
+m10.pfb>
+Output written on HW1.pdf (6 pages, 678336 bytes).
 PDF statistics:
- 69 PDF objects out of 1000 (max. 8388607)
- 47 compressed objects within 1 object stream
+ 121 PDF objects out of 1000 (max. 8388607)
+ 75 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 23 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 38 words of extra memory for PDF output out of 10000 (max. 10000000)
 
