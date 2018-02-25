@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.2.9)  25 FEB 2018 12:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.2.9)  25 FEB 2018 12:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -913,42 +913,50 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
+
+Class amsart Warning: Abstract should precede \maketitle in AMS document classe
+s; reported on input line 84.
+
 <Figure_1.png, id=4, 462.528pt x 346.896pt>
 File: Figure_1.png Graphic file (type png)
  <use Figure_1.png>
-Package pdftex.def Info: Figure_1.png used on input line 107.
+Package pdftex.def Info: Figure_1.png used on input line 112.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
-
-<RRR_flow_final.png, id=6, 638.1441pt x 579.6054pt>
+ [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./Figure_1.png>]
+<RRR_flow_final.png, id=22, 638.1441pt x 579.6054pt>
 File: RRR_flow_final.png Graphic file (type png)
  <use RRR_flow_final.png>
-Package pdftex.def Info: RRR_flow_final.png used on input line 174.
+Package pdftex.def Info: RRR_flow_final.png used on input line 179.
 (pdftex.def)             Requested size: 360.0pt x 326.98239pt.
 
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./Figure_1.png>]
-[2 <./RRR_flow_final.png>] [3] (./HW1.aux) ) 
+[2 <./RRR_flow_final.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3]
+[4] (./HW1.aux) ) 
 Here is how much of TeX's memory you used:
- 24110 strings out of 493029
- 444655 string characters out of 6136235
- 498819 words of memory out of 5000000
- 27115 multiletter control sequences out of 15000+600000
- 11940 words of font info for 52 fonts, out of 8000000 for 9000
+ 24114 strings out of 493029
+ 444706 string characters out of 6136235
+ 497819 words of memory out of 5000000
+ 27118 multiletter control sequences out of 15000+600000
+ 12409 words of font info for 54 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
  55i,7n,54p,10372b,335s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
-10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on HW1.pdf (3 pages, 203361 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc1
+0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmtt8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/symbols/msbm10.pfb>
+Output written on HW1.pdf (4 pages, 212602 bytes).
 PDF statistics:
- 62 PDF objects out of 1000 (max. 8388607)
- 42 compressed objects within 1 object stream
+ 69 PDF objects out of 1000 (max. 8388607)
+ 47 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  23 words of extra memory for PDF output out of 10000 (max. 10000000)
 
