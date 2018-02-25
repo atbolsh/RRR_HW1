@@ -10,6 +10,7 @@
 \usepackage{caption}
 \usepackage{subcaption}
 \usepackage{breqn}
+\usepackage{float}
 %\onehalfspacing
 
 %theoremstyle{plain} --- default
@@ -74,6 +75,9 @@
 
 \author{A. Bolshakov}
 
+\begin{abstract}
+My solutions. Code is at \texttt{}.
+\end{abstract}
 
 \begin{document}
 
@@ -168,8 +172,39 @@ This is a classic linear hyperbolic system. The two eigenvalues are $\pm 2m$, so
 
 \section{Problem 2}
 
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{RRR_flow_final.png}
+\caption{RRR flow, 
+including constraint surfaces (blue and green), 
+the set of fixed points (dark blue), 
+4 sample trajectories (red), 
+and the vector field for this dynamical system. 
+Notice that since the problem domain $\mathbb{R}^2$ is spanned by the constraint surfaces, 
+we do not need to worry about the distinction between $\mathbf{x}$ and $P_A(\mathbf{x})$.}
+\label{fig2}
+\end{figure}
 
 
+Fig. \ref{fig2} shows the RRR flow. 
+Numerical integration does not suggest any cycles, at least not in the smooth limit (I use $\beta = 0.01$); 
+all $4$ of the tested trajectories converge, and my sample points represent all $4$ important regions:
+\begin{enumerate}
+\item
+inside $A$; 
+\item
+directly above or to the left of $A$; 
+\item
+above-right /  below-left of $A$; 
+\item
+and above-left / below-right of $A$.
+\end{enumerate}
+
+It would be possible to go through and rigorously confirm that trajectories from all $4$ of these regions do, in fact, converge, 
+but that= does not seem necessarry - after all, the entire point of the algorithms is to find solutions for problems where the 
+flow is \textbf{not} fully understood.
+
+\pagebreak
 \section{Problem 3}
 
 
