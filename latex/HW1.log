@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.2.9)  25 FEB 2018 17:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.2.9)  25 FEB 2018 17:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -927,44 +927,50 @@ Overfull \hbox (67.7581pt too wide) in paragraph at lines 85--88
 8 https://github.com/atbolsh/RRR[]HW1\OT1/cmr/m/n/8 .
  []
 
-<Figure_1.png, id=4, 462.528pt x 346.896pt>
-File: Figure_1.png Graphic file (type png)
- <use Figure_1.png>
-Package pdftex.def Info: Figure_1.png used on input line 114.
+<../images/Figure_1.png, id=4, 462.528pt x 346.896pt>
+File: ../images/Figure_1.png Graphic file (type png)
+
+<use ../images/Figure_1.png>
+Package pdftex.def Info: ../images/Figure_1.png used on input line 114.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
- [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./Figure_1.png>]
-<RRR_flow_final.png, id=22, 638.1441pt x 579.6054pt>
-File: RRR_flow_final.png Graphic file (type png)
- <use RRR_flow_final.png>
-Package pdftex.def Info: RRR_flow_final.png used on input line 181.
+ [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../images/Figure_1.png>
+]
+<../images/RRR_flow_final.png, id=22, 638.1441pt x 579.6054pt>
+File: ../images/RRR_flow_final.png Graphic file (type png)
+
+<use ../images/RRR_flow_final.png>
+Package pdftex.def Info: ../images/RRR_flow_final.png used on input line 181.
 (pdftex.def)             Requested size: 360.0pt x 326.98239pt.
+ [2 <../images/RRR_flow_final.png>]
+<../images/original.pdf, id=28, 462.52798pt x 346.89601pt>
+File: ../images/original.pdf Graphic file (type pdf)
 
-[2 <./RRR_flow_final.png>] <original.pdf, id=28, 462.52798pt x 346.89601pt>
-File: original.pdf Graphic file (type pdf)
-
-<use original.pdf>
-Package pdftex.def Info: original.pdf used on input line 263.
+<use ../images/original.pdf>
+Package pdftex.def Info: ../images/original.pdf used on input line 263.
 (pdftex.def)             Requested size: 360.0pt x 270.01141pt.
- <rescaled.pdf, id=29, 462.52798pt x 346.89601pt>
-File: rescaled.pdf Graphic file (type pdf)
 
-<use rescaled.pdf>
-Package pdftex.def Info: rescaled.pdf used on input line 270.
-(pdftex.def)             Requested size: 360.0pt x 270.01141pt.
- <bimodal.pdf, id=30, 462.52798pt x 346.89601pt>
-File: bimodal.pdf Graphic file (type pdf)
+<../images/rescaled.pdf, id=29, 462.52798pt x 346.89601pt>
+File: ../images/rescaled.pdf Graphic file (type pdf)
 
-<use bimodal.pdf>
-Package pdftex.def Info: bimodal.pdf used on input line 277.
+<use ../images/rescaled.pdf>
+Package pdftex.def Info: ../images/rescaled.pdf used on input line 270.
 (pdftex.def)             Requested size: 360.0pt x 270.01141pt.
- [3] [4 <./original.pdf>] [5 <./rescaled.pdf>] [6 <./bimodal.pdf>] (./HW1.aux)
+
+<../images/bimodal.pdf, id=30, 462.52798pt x 346.89601pt>
+File: ../images/bimodal.pdf Graphic file (type pdf)
+
+<use ../images/bimodal.pdf>
+Package pdftex.def Info: ../images/bimodal.pdf used on input line 277.
+(pdftex.def)             Requested size: 360.0pt x 270.01141pt.
+ [3] [4 <../images/original.pdf>] [5 <../images/rescaled.pdf>] [6 <../images/bi
+modal.pdf>] (./HW1.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 24133 strings out of 493029
- 444971 string characters out of 6136235
+ 24134 strings out of 493029
+ 445181 string characters out of 6136235
  498874 words of memory out of 5000000
  27133 multiletter control sequences out of 15000+600000
  12577 words of font info for 55 fonts, out of 8000000 for 9000
@@ -982,7 +988,7 @@ msfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mtt8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msb
 m10.pfb>
-Output written on HW1.pdf (6 pages, 681533 bytes).
+Output written on HW1.pdf (6 pages, 681555 bytes).
 PDF statistics:
  121 PDF objects out of 1000 (max. 8388607)
  75 compressed objects within 1 object stream

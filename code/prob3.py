@@ -7,7 +7,7 @@ from PIL import Image
 
 from RRR import *
 
-im = 'DrawingHands.jpg'        #Filename
+im = '../images/DrawingHands.jpg'        #Filename
 m = 0.0                        #Pure white
 M = 255.0                      #Pure black
 
@@ -57,24 +57,24 @@ def histogram_projection(a, target):
 
 def main():
     a, shape = image_as_array(im)
-    show_array(a, shape, 'original.pdf')
+    show_array(a, shape, '../images/original.pdf')
     target = np.linspace(m, M, len(a))
     fixPic = histogram_projection(a, target)
-    show_array(fixPic, shape, 'rescaled.pdf')
+    show_array(fixPic, shape, '../images/rescaled.pdf')
     return fixPic.reshape(shape)
 
 def bimodal(black_factor=1/6.0):
     """Projects to a skewed bimodal."""
     a, shape = image_as_array(im)
-    show_array(a, shape, 'original.pdf')
+    show_array(a, shape, '../images/original.pdf')
     l = len(a)
     blacks = m*np.ones(int(black_factor*l)) #Integer division
     whites = M*np.ones(l - int(black_factor*l))
     target = np.concatenate((blacks, whites))
     fixPic = histogram_projection(a, target)
-    show_array(fixPic, shape, 'bimodal.pdf')
+    show_array(fixPic, shape, '../images/bimodal.pdf')
     return fixPic.reshape(shape)
 
 
-#main()
+main()
 #bimodal()
